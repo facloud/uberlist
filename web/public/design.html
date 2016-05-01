@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Uberlist</title>
+
+		<!-- Bootstrap -->
+		<link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="static/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- The application -->
+		<link href="static/app/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<div id="Logo">
+							<h1>UberList</h1>
+						</div>
+					</a>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<ul id="ProjectPills" class="col-lg-1 nav nav-pills nav-stacked">
+					<li role="presentation" class="active">
+						<a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+					</li>
+					<li role="presentation">
+						<a href="#"><span class="glyphicon glyphicon-education"></span></a>
+					</li>
+					<li role="presentation">
+						<a href="#"><span class="glyphicon glyphicon-console"></span></a>
+					</li>
+				</ul>
+				<div class="col-lg-5 list-group" id="TaskSelector">
+					<a href="#" class="list-group-item active">
+						<span class="badge">Wunderlist:CS/Hacking ideas</span>
+						<p class="list-group-item-text">Generic recommendation engine for iPhone and Android notifications</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<span class="badge">Trello:Personal</span>
+						<span class="badge">Notes</span>
+						<p class="list-group-item-text">DAS: Take notes for episode on exceptions and control flow</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<span class="badge">Personal Google Inbox</span>
+						<span class="badge">Golang</span>
+						<p class="list-group-item-text">check out dynamic loading suggestions</p>
+					</a>
+				</div>
+				<div class="col-lg-6" id="TaskDetails">
+					<div class="pull-right" id="TaskActions">
+						<div class="btn-group btn-group-md" role="group" aria-label="Actions">
+							<button type="button" class="btn btn-success" aria-label="Complete">
+								<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+							</button>
+							<button type="button" class="btn btn-default" aria-label="Open in WUnderlist">
+								<span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+							</button>
+							<button type="button" class="btn btn-danger" aria-label="Remove">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+					<div class="page-header">
+						<h3>Generic recommendation engine for iPhone and Android notifications</h3>
+						<span class="label label-default">Wunderlist:CS/Hacking ideas</span>
+					</div>
+					<div class="well">
+						<ul>
+							<li>Personas</li>
+							<li>Most people forget to disable notifications</li>
+							<li>Unless they are really annoyed</li>
+							<li>A/B testing on tuning</li>
+							<li>Measure the success by people opting out and successful notifications</li>
+						</ul>
+					</div>
+					<span class="help-block">Click on the description to edit</span>
+					<h3>Subtasks</h3>
+					<p>TODO</p>
+					<h3>Comments</h3>
+					<p>TODO</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
