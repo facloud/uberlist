@@ -43,6 +43,11 @@ all =
         )
         modelWithNewTask
 
+    submittedNewTask =
+      UberlistTask.update
+        (UberlistTask.SubmitNewTitle)
+        modifiedNewTask
+
     modelWithNewTaskSubmitted =
       UberlistTaskList.update
         UberlistTaskList.SubmitNewTask
@@ -79,7 +84,14 @@ all =
           (assertOnListItem
             0
             modelWithNewTaskSubmitted.tasks
-            (\task -> assertEqual task modifiedNewTask)
+            (\task -> assertEqual task.title modifiedNewTask.title)
+          )
+      , test
+          "Stops modifying the new task when submitting it"
+          (assertOnListItem
+            0
+            modelWithNewTaskSubmitted.tasks
+            (\task -> assertEqual task submittedNewTask)
           )
       , test
           "Nullifies the new task field when submitting the new task"

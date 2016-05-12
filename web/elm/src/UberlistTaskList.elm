@@ -49,7 +49,7 @@ update action model =
         Just newTask ->
           { model
             | tasks =
-                List.append [ newTask ] model.tasks
+                List.append [ (UberlistTask.update UberlistTask.SubmitNewTitle newTask) ] model.tasks
             , newTask = Nothing
             , activeTaskIdx = 0
           }
