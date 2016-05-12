@@ -68,7 +68,7 @@ viewNewStoryButtons address model =
                 , onClick address UberlistTaskList.CancelNewTask
                 ]
                 [ span [ class "glyphicon glyphicon-remove" ] []
-                , text " Add new task"
+                , text " Cancel"
                 ]
             ]
         ]
